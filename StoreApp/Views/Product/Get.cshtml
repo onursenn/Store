@@ -1,0 +1,13 @@
+@model Product
+<div class="row">
+    <div class="col-md-12">
+<div class="text-center">
+<h2>@Model.ProductName</h2>
+<img class="img-fluid shadow rounded-3 my-3" src="@Model?.ImageUrl" alt="@Model.ProductName" width="25%">
+<p>@Model.Summary</p>
+<h3>@Model.Price.ToString("c")</h3>
+<a class="btn btn-primary" asp-controller="Product" asp-action="Index">
+    <i class="fa-solid fa-arrow-right"></i>Ürünlere Dön
+</a>
+</div>
+</div>
